@@ -25,3 +25,7 @@ optional arguments:
 required arguments:
   --video_path VIDEOIN, -i VIDEOIN
 ```
+
+# Credits
+
+* FaceForensics++: Learning to Detect Manipulated Facial Images (https://github.com/ondyari/FaceForensics)
