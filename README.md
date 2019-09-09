@@ -3,12 +3,12 @@
 The tool use the project faceforensics.
 
 # Installation
-```
+```console
 pip install -r requirements.txt
 ```
 
 # Usage
-```
+```console
 usage: main.py [-h] [--model_path MODEL] [--output_path VIDEOOUT]
                [--start_frame START_FRAME] [--end_frame END_FRAME] [--cuda]
                [--fast] --video_path VIDEOIN
@@ -27,7 +27,7 @@ required arguments:
 ```
 
 # Output
-```
+```console
 python3 main.py -i https://www.youtube.com/watch?v=GTh2tRAE2w4
 
 [youtube] GTh2tRAE2w4: Downloading webpage
