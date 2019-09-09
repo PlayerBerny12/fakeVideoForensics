@@ -19,14 +19,14 @@ def main():
 
     p = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    p.add_argument('--video_path', '-i', dest='videoIn', type=str)
     p.add_argument('--model_path', '-mi',dest='model', type=str, default=None)
-    p.add_argument('--output_path', '-o',dest='videoOut', type=str,
-                   default='.')
+    p.add_argument('--output_path', '-o',dest='videoOut', type=str, default='.')
     p.add_argument('--start_frame', type=int, default=0)
     p.add_argument('--end_frame', type=int, default=None)
     p.add_argument('--cuda', action='store_true')
     p.add_argument('--fast', action='store_true')
+    requiredNamed = p.add_argument_group('required arguments')
+    requiredNamed.add_argument('--video_path', '-i', dest='videoIn', type=str, required=True)
     args = p.parse_args()
 
     video_path = args.videoIn
