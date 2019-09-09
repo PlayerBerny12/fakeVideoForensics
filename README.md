@@ -28,7 +28,8 @@ required arguments:
 
 # Demo
 
-https://youtu.be/8YYRT4lzQgY
+[<img src="https://img.youtube.com/vi/8YYRT4lzQgY/maxresdefault.jpg" width="100%">](https://youtu.be/8YYRT4lzQgY)
+
 
 # Credits
 
