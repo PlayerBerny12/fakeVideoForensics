@@ -27,6 +27,7 @@ required arguments:
 ```
 
 # Output
+```
 python3 main.py -i https://www.youtube.com/watch?v=GTh2tRAE2w4
 
 [youtube] GTh2tRAE2w4: Downloading webpage
@@ -48,7 +49,7 @@ Model found in ./models/full/xception/full_c23.p
  100%|█████████████████████████████████████████████████████████████████████████████████████████████| 695/695 [01:02<00:00,  9.62it/s]700it [01:09, 10.17it/s]                                                                                                                      
 The Fake Score is: 95.71428571428572
 Output video in: video.avi
-
+```
 
 # Demo
 
