@@ -148,6 +148,7 @@ def test_full_image_network(video_path, model_path, output_path, fast,
 
     # Fake frames number
     ff = 0
+    ffn = 0
 
     # Frame numbers and length of output video
     frame_num = 0
@@ -159,11 +160,16 @@ def test_full_image_network(video_path, model_path, output_path, fast,
         _, image = reader.read()
         if image is None:
             break
-        frame_num += 1
+        if fast:
+            frame_num += 10
+            pbar.update(10)
+        else:
+            frame_num+= 1
+            pbar.update(1)
+
 
         if frame_num < start_frame:
             continue
-        pbar.update(1)
 
         # Image size
         height, width = image.shape[:2]
@@ -191,6 +197,7 @@ def test_full_image_network(video_path, model_path, output_path, fast,
 
             if prediction == 1:
                 ff += 1
+            ffn +=1
             # ------------------------------------------------------------------
 
             # Text and bb
@@ -214,7 +221,7 @@ def test_full_image_network(video_path, model_path, output_path, fast,
         writer.write(image)
 
     pbar.close()
-    p = ff / float(frame_num) * 100;
+    p = ff / float(ffn) * 100;
 
     if writer is not None:
         out = {}

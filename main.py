@@ -19,7 +19,7 @@ def main():
 
     p = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    p.add_argument('--model_path', '-mi',dest='model', type=str, default=None)
+    p.add_argument('--model_path', '-mi',dest='model', type=str, default='./models/full/xception/full_c23.p')
     p.add_argument('--output_path', '-o',dest='videoOut', type=str, default='.')
     p.add_argument('--start_frame', type=int, default=0)
     p.add_argument('--end_frame', type=int, default=None)
@@ -44,7 +44,6 @@ def main():
             with youtube_dl.YoutubeDL(ydl_opts) as ydl:
                 info = ydl.extract_info(video_url[0], download=True)
                 filename = ydl.prepare_filename(info)
-                print(filename)
             prediction = test_full_image_network(filename,args.model,args.videoOut, args.fast)
             os.remove(filename)
         else:
