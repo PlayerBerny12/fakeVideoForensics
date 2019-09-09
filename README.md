@@ -2,6 +2,12 @@
 
 The tool use the project faceforensics.
 
+# Requirements
+
+```
+Python >= 3.5
+```
+
 # Installation
 ```console
 pip install -r requirements.txt
