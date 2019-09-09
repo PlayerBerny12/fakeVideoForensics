@@ -14,6 +14,27 @@ def warn(*args, **kwargs):
 
 warnings.warn = warn
 
+def banner():
+    print("[FVD : Fake Video Detector]")
+    print("""
+
+############################
+
+ /$$$$$$$$ /$$    /$$ /$$$$$$$
+| $$_____/| $$   | $$| $$__  $$
+| $$      | $$   | $$| $$  \ $$
+| $$$$$   |  $$ / $$/| $$  | $$
+| $$__/    \  $$ $$/ | $$  | $$
+| $$        \  $$$/  | $$  | $$
+| $$         \  $/   | $$$$$$$/
+|__/          \_/    |_______/
+
+############################
+
+    """)
+
+
+
 def main():
     signal(SIGINT, SIG_DFL)
 
@@ -54,4 +75,5 @@ def main():
     print("Output video in: " + prediction["file"])
 
 if __name__ == '__main__':
+    banner()
     main()
