@@ -1,4 +1,4 @@
-# FakeVideoForensics!!!
+# Fake Video Forensics
 
 FakeVideoForensics is an ambicious open-source tool that allows to detect fake videos using the best algorithms and released tools. 
 Our tool is useful for OSINT researchers, threat intelligent's analysts and for design best procedures about authentication and identification of people/users, specially in the security behaviour area.
