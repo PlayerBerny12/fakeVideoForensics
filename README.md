@@ -12,7 +12,9 @@ Currently, our tool can detect fake faces from urls (videos from youtube) and vi
 - FaceForensics++: Learning to Detect Manipulated Facial Images - Andreas Rössler, Davide Cozzolino, Luisa Verdoliva, Christian Riess, Justus Thies, Matthias Nießner. https://arxiv.org/abs/1901.08971
 
 [Authors]
-Dr. Alfonso Muñoz (@mindcrypt), Miguel Hernández (@miguelhzbz), Jose Ignacio Escribano Pablos (github-@jyep)
+Dr. Alfonso Muñoz (@mindcrypt), 
+Miguel Hernández (@miguelhzbz), 
+Jose Ignacio Escribano Pablos (github-@jyep)
 
 
 
