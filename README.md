@@ -1,6 +1,20 @@
-# Fake video detector!!!
+# FakeVideoForensics!!!
 
-The tool use the project faceforensics.
+FakeVideoForensics is an ambicious open-source tool that allows to detect fake videos using the best algorithms and released tools. 
+Our tool is useful for OSINT researchers, threat intelligent's analysts and for design best procedures about authentication and identification of people/users, specially in the security behaviour area.
+
+Currently, our tool can detect fake faces from urls (videos from youtube) and video files that use FaceSwap, Face2Face or DeepFakes as algorithm to create fake content. We use the advanced researches in this topic to get this target. For example, we use an evolution of the research FaceForensics++
+
+[Sources]
+- https://github.com/MarekKowalski/FaceSwap
+- https://github.com/datitran/face2face-demo
+- https://github.com/deepfakes/faceswap
+- FaceForensics++: Learning to Detect Manipulated Facial Images - Andreas Rössler, Davide Cozzolino, Luisa Verdoliva, Christian Riess, Justus Thies, Matthias Nießner. https://arxiv.org/abs/1901.08971
+
+[Authors]
+Dr. Alfonso Muñoz (@mindcrypt), Miguel Hernández (@miguelhzbz), Jose Ignacio Escribano Pablos (github-@jyep)
+
+
 
 # Requirements
 
