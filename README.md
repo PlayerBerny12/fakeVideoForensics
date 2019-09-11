@@ -5,18 +5,17 @@ Our tool is useful for OSINT researchers, threat intelligent's analysts and for 
 
 Currently, our tool can detect fake faces from urls (videos from youtube) and video files that use FaceSwap, Face2Face or DeepFakes as algorithm to create fake content. We use the advanced researches in this topic to get this target. For example, we use an evolution of the research FaceForensics++
 
-[Sources]
+# Sources
 - https://github.com/MarekKowalski/FaceSwap
 - https://github.com/datitran/face2face-demo
 - https://github.com/deepfakes/faceswap
 - FaceForensics++: Learning to Detect Manipulated Facial Images - Andreas Rössler, Davide Cozzolino, Luisa Verdoliva, Christian Riess, Justus Thies, Matthias Nießner. https://arxiv.org/abs/1901.08971
 
-[Authors]
+# Authors
 
 * Dr. Alfonso Muñoz (@mindcrypt),
 * Miguel Hernández (@miguelhzbz), 
-* Jose Ignacio Escribano Pablos (github-@jyep)
-
+* Jose Ignacio Escribano Pablos (@jiep)
 
 
 # Requirements
