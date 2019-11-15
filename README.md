@@ -1,7 +1,7 @@
 # Fake Video Forensics
 
 FakeVideoForensics is an ambicious open-source tool that allows to detect fake videos using the best algorithms and released tools. 
-Our tool is useful for OSINT researchers, threat intelligent's analysts and for design best procedures about authentication and identification of people/users, specially in the security behaviour area.
+Our tool is useful for OSINT researchers, threat intelligence analysts and to design the best procedures on authentication and identification of people / users, especially in the area of security behavior.
 
 Currently, our tool can detect fake faces from urls (videos from youtube) and video files that use FaceSwap, Face2Face or DeepFakes as algorithm to create fake content. We use the advanced researches in this topic to get this target. For example, we use an evolution of the research FaceForensics++
 
