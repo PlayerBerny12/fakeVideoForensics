@@ -20,10 +20,9 @@ Currently, our tool can detect fake faces from urls (videos from youtube) and vi
 
 # Requirements
 
-```
-Python >= 3.5
-CMake
-```
+* `Python >= 3.5`
+* `CMake`
+
 
 # Installation
 ```console
