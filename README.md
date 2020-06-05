@@ -1,32 +1,31 @@
 # Fake Video Forensics
 
-FakeVideoForensics is an ambicious open-source tool that allows to detect fake videos using the best algorithms and released tools. 
-Our tool is useful for OSINT researchers, threat intelligence analysts and to design the best procedures on authentication and identification of people / users, especially in the area of security behavior.
+> FakeVideoForensics is an ambicious open-source tool that allows to detect fake videos using the best algorithms and released tools.
 
-Currently, our tool can detect fake faces from urls (videos from youtube) and video files that use FaceSwap, Face2Face or DeepFakes as algorithm to create fake content. We use the advanced researches in this topic to get this target. For example, we use an evolution of the research FaceForensics++
+> Our tool is useful for OSINT researchers, threat intelligence analysts and to design the best procedures on authentication and identification of people / users, especially in the area of security behavior.
 
-# Sources
-- https://github.com/MarekKowalski/FaceSwap
-- https://github.com/datitran/face2face-demo
-- https://github.com/deepfakes/faceswap
-- FaceForensics++: Learning to Detect Manipulated Facial Images - Andreas Rössler, Davide Cozzolino, Luisa Verdoliva, Christian Riess, Justus Thies, Matthias Nießner. https://arxiv.org/abs/1901.08971
-
-# Authors
-
-* Dr. Alfonso Muñoz (@mindcrypt),
-* Miguel Hernández (@miguelhzbz), 
-* Jose Ignacio Escribano Pablos (@jiep)
-
+>Currently, our tool can detect fake faces from urls (videos from youtube) and video files that use FaceSwap, Face2Face or DeepFakes as algorithm to create fake content. We use the advanced researches in this topic to get this target. For example, we use an evolution of the research FaceForensics++.
 
 # Requirements
 
-* `Python >= 3.5`
-* `CMake`
+* [Docker](https://www.docker.com)
 
+# Build & Run
 
-# Installation
+> NOTE: Only CPU is supported at this time.
+
+## For Mac & Linux users
+
 ```console
-pip install -r requirements.txt
+docker build -t fakevideoforensics .
+docker run -it -v `pwd`:/app fakevideoforensics
+```
+
+## For Windows users
+
+```console
+docker build -t fakevideoforensics .
+docker run -it -v %cd%:/app fakevideoforensics
 ```
 
 # Usage
@@ -48,7 +47,7 @@ required arguments:
   --video_path VIDEOIN, -i VIDEOIN
 ```
 
-# Output
+# Example
 ```console
 user@host:/app# python3 main.py -i https://www.youtube.com/watch?v=GTh2tRAE2w4 -mi models/full/xception/full_c23.p
 [youtube] GTh2tRAE2w4: Downloading webpage
@@ -69,7 +68,21 @@ Output video in: video.avi
 
 [<img src="https://img.youtube.com/vi/8YYRT4lzQgY/maxresdefault.jpg" width="100%">](https://youtu.be/8YYRT4lzQgY)
 
+# Authors
+
+* Dr. Alfonso Muñoz (@mindcrypt),
+* Miguel Hernández (@miguelhzbz),
+* Jose Ignacio Escribano Pablos (@jiep)
+
 
 # Credits
 
 * FaceForensics++: Learning to Detect Manipulated Facial Images (https://github.com/ondyari/FaceForensics)
+
+* FaceSwap: https://github.com/MarekKowalski/FaceSwap
+* Face2Face: https://github.com/datitran/face2face-demo
+* FaceSwap: https://github.com/deepfakes/faceswap
+
+# References
+
+- FaceForensics++: Learning to Detect Manipulated Facial Images - Andreas Rössler, Davide Cozzolino, Luisa Verdoliva, Christian Riess, Justus Thies, Matthias Nießner. https://arxiv.org/abs/1901.08971.
