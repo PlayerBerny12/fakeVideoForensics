@@ -42,3 +42,5 @@ torch==1.0.1.post2
 torchvision==0.2.1
 tqdm==4.25.0
 youtube-dl
+fastapi
+uvicorn[standard]
