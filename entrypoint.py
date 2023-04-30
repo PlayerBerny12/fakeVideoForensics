@@ -24,6 +24,7 @@ from typing import Any
 
 import subprocess
 import os
+import pathlib
 
 app = FastAPI()
 
@@ -33,7 +34,12 @@ def check_request(file_path: str):
     """
     Check file type if it is processable
     """
-    return True
+    file_extension = pathlib.Path(file_path).suffix
+    
+    if file_extension == ".mp4" or file_extension == ".avi":
+        return True
+    else: 
+        return False
 
 def data_preparation(file_path: str):
     """
