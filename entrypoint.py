@@ -75,7 +75,7 @@ def results_normalization(results: Any):
     Normalize data by converting to interval <0-1>
     """
     
-    return results
+    return results / 100
 
 @app.get("/detect")
 def detect(id: int, checksum: str, filename: str, status: int, type: int):
@@ -95,6 +95,8 @@ def detect(id: int, checksum: str, filename: str, status: int, type: int):
         if results:
             results = results_normalization(results)
 
-        return {"RequestID": id, "Value": results, "MethodID": ID}
+            return {"RequestID": id, "Value": results, "MethodID": ID}            
+        else:
+            return None
     else:
-        return {"RequestID": id, "Value": None, "MethodID": ID}
+        return None
