@@ -3,7 +3,7 @@ FROM python:3.6
 WORKDIR /app
 ADD dataset/ dataset/
 ADD network/ network/
-COPY models/face_detection/xception/full_c23.p models/face_detection/xception/full_c23.p
+COPY models/full/xception/full_c23.p models/full/xception/full_c23.p
 COPY detect_fake_videos.py entrypoint.py main.py requirements.txt xception-b5690688.pth ./
 
 RUN apt update && apt install -y cmake && \
