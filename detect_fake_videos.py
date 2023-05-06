@@ -161,8 +161,8 @@ def test_full_image_network(video_path, model_path, output_path, fast,
         if image is None:
             break
         if fast:
-            frame_num += 10
-            pbar.update(10)
+            frame_num += 5
+            pbar.update(5)
         else:
             frame_num+= 1
             pbar.update(1)
