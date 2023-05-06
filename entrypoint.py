@@ -57,7 +57,7 @@ def detection_method(file_path: str):
     """
     process = subprocess.run(
         ["python3", "-u", "main.py", "--output_path", "/tmp", "--fast",
-         "--video_path", "/app/obama.mp4"],
+         "--video_path", file_path],
         stdout=subprocess.PIPE,
         encoding="utf-8"
     )    
